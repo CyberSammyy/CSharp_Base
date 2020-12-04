@@ -16,7 +16,7 @@ namespace Lesson7
             Console.WriteLine("Enter a name of map:");
             string path = Console.ReadLine();
             RenderMenu(path);
-            
+            Console.ReadKey();
         }
         //static char[,] RandomMap()
         //{
@@ -166,7 +166,7 @@ namespace Lesson7
                             break;
                         }
                     }
-                    RenderPause();
+                    //RenderPause();
                 }
                 else if (key == ConsoleKey.S)
                 {
@@ -198,7 +198,7 @@ namespace Lesson7
                                     Console.WriteLine("W,A,S,D to move, I - inventory, 1 - take/hide a weapon (if you have it in the invontory)");
                                 }
                                 while (Console.ReadKey().Key != ConsoleKey.Escape);
-                                RenderPause();
+                                //RenderPause();
                             }
                             else if (line == "Developers<")
                             {
@@ -208,7 +208,7 @@ namespace Lesson7
                                     Console.WriteLine("Hideo Kojima, Hideo Kojima and Hideo Kojima.");
                                 }
                                 while (Console.ReadKey().Key != ConsoleKey.Escape);
-                                RenderPause();
+                                //RenderPause();
                             }
                             else if (line == "Rules<")
                             {
@@ -218,7 +218,7 @@ namespace Lesson7
                                     Console.WriteLine("You have to reach F point. You can heal yourself when standing on \"F\". You can avoid enemies or defeat them with your bare hands or with a SWORD (\"W\")");
                                 }
                                 while (Console.ReadKey().Key != ConsoleKey.Escape);
-                                RenderPause();
+                                //RenderPause();
                             }
                         }
                     }
